@@ -1901,6 +1901,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/classnames@^2.2.11":
+  version "2.3.1"
+  resolved "https://registry.npmmirror.com/@types/classnames/-/classnames-2.3.1.tgz#3c2467aa0f1a93f1f021e3b9bcf938bd5dfdc0dd"
+  integrity sha512-zeOWb0JGBoVmlQoznvqXbE0tEC/HONsnoUNH19Hc96NFsTAwTXbTqb8FMYkru1F/iqp7a18Ws3nWJvtA1sHD1A==
+  dependencies:
+    classnames "*"
+
 "@types/connect-history-api-fallback@^1.3.5":
   version "1.3.5"
   resolved "https://registry.npmmirror.com/@types/connect-history-api-fallback/-/connect-history-api-fallback-1.3.5.tgz#d1f7a8a09d0ed5a57aee5ae9c18ab9b803205dae"
@@ -1915,6 +1922,13 @@
   integrity sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==
   dependencies:
     "@types/node" "*"
+
+"@types/echarts@^5.0.0":
+  version "4.9.16"
+  resolved "https://registry.npmmirror.com/@types/echarts/-/echarts-4.9.16.tgz#7156aea4623f3543b083200f6c65e04d3693bcc8"
+  integrity sha512-bfiagfPw3dWauAIJ9fgoJQoL4hLWlGcltqwbE6LGye0NIY5xnbZau+mDmadCzGojic3MWuFDCUiO25kl4sRGeA==
+  dependencies:
+    "@types/zrender" "*"
 
 "@types/eslint-scope@^3.7.3":
   version "3.7.4"
@@ -2194,6 +2208,11 @@
   integrity sha512-Nz4MPhecOFArtm81gFQvQqdV7XYCrWKx5uUt6GNHredFHn1i2mtWqXTON7EPXMtNi1qjtjEM/VCHDhcHsAMLXQ==
   dependencies:
     "@types/yargs-parser" "*"
+
+"@types/zrender@*":
+  version "4.0.3"
+  resolved "https://registry.npmmirror.com/@types/zrender/-/zrender-4.0.3.tgz#d18b31648b2f11b9ec672a560836e1887a965ec1"
+  integrity sha512-EPI269lkHNsObwILJ1k1z7znLjKyePuWRy/XKK0shSGpBb9cIX307arcwJV4+2NeZj5wEjN06r4D8yFv7sI06g==
 
 "@typescript-eslint/eslint-plugin@^5.5.0":
   version "5.36.2"
@@ -3194,7 +3213,7 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.npmmirror.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
-classnames@2.x, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1:
+classnames@*, classnames@2.x, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmmirror.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
@@ -3929,6 +3948,22 @@ duplexer@^0.1.2:
   version "0.1.2"
   resolved "https://registry.npmmirror.com/duplexer/-/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
+
+echarts-for-react@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.npmmirror.com/echarts-for-react/-/echarts-for-react-3.0.2.tgz#ac5859157048a1066d4553e34b328abb24f2b7c1"
+  integrity sha512-DRwIiTzx8JfwPOVgGttDytBqdp5VzCSyMRIxubgU/g2n9y3VLUmF2FK7Icmg/sNVkv4+rktmrLN9w22U2yy3fA==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    size-sensor "^1.0.1"
+
+echarts@^5.0.0:
+  version "5.3.3"
+  resolved "https://registry.npmmirror.com/echarts/-/echarts-5.3.3.tgz#df97b09c4c0e2ffcdfb44acf518d50c50e0b838e"
+  integrity sha512-BRw2serInRwO5SIwRviZ6Xgm5Lb7irgz+sLiFMmy/HOaf4SQ+7oYqxKzRHAKp4xHQ05AuHw1xvoQWJjDQq/FGw==
+  dependencies:
+    tslib "2.3.0"
+    zrender "5.3.2"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -6450,7 +6485,7 @@ mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.6"
 
-moment@^2.24.0, moment@^2.29.2:
+moment@^2.24.0, moment@^2.29.1, moment@^2.29.2:
   version "2.29.4"
   resolved "https://registry.npmmirror.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
   integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
@@ -8609,6 +8644,11 @@ sisteransi@^1.0.5:
   resolved "https://registry.npmmirror.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
 
+size-sensor@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/size-sensor/-/size-sensor-1.0.1.tgz#f84e46206d3e259faff1d548e4b3beca93219dbb"
+  integrity sha512-QTy7MnuugCFXIedXRpUSk9gUnyNiaxIdxGfUjr8xxXOqIB3QvBUYP9+b51oCg2C4dnhaeNk/h57TxjbvoJrJUA==
+
 slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmmirror.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
@@ -9145,6 +9185,11 @@ tsconfig-paths@^3.14.1:
     json5 "^1.0.1"
     minimist "^1.2.6"
     strip-bom "^3.0.0"
+
+tslib@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
 
 tslib@^1.10.0, tslib@^1.8.1:
   version "1.14.1"
@@ -9849,3 +9894,10 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmmirror.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zrender@5.3.2:
+  version "5.3.2"
+  resolved "https://registry.npmmirror.com/zrender/-/zrender-5.3.2.tgz#f67b11d36d3d020d62411d3bb123eb1c93cccd69"
+  integrity sha512-8IiYdfwHj2rx0UeIGZGGU4WEVSDEdeVCaIg/fomejg1Xu6OifAL1GVzIPHg2D+MyUkbNgPWji90t0a8IDk+39w==
+  dependencies:
+    tslib "2.3.0"

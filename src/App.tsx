@@ -6,7 +6,7 @@ function App() {
   return (
     <HashRouter>
       <Switch>
-        <Route path={'/'} exact render={() => <Redirect to={'/login'} />} />
+        <Route path={'/'} exact render={() => <Redirect to={'/root'} />} />
         <Route path={'/login'} exact component={Login} />
         <Route path={'/root'} component={Root} />
       </Switch>

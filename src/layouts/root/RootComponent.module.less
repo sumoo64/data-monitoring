@@ -3,41 +3,160 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-image: url('./assets/images/background.jpg');
-  background-repeat: no-repeat;
+  background-image: url('./assets/images/bg-up.png');
   background-size: cover;
 
   .header {
     width: 100%;
-    height: 100px;
-    background-color: rgba(240, 248, 255, 0.055);
-    .title {
+    height: 10%;
+    .title-container {
+      position: relative;
+      z-index: 0;
       width: 100%;
-      color: white;
-      font-weight: bold;
-      font-size: 30px;
-      line-height: 100px;
-      text-align: center;
+      height: 100%;
+      .logo {
+        position: absolute;
+        z-index: 1;
+        width: 4%;
+        height: 100%;
+        background-image: url('./assets/images/logo.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+      }
+      .menu {
+        position: absolute;
+        top: 9%;
+        left: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 30%;
+        height: 100%;
+        // border: 1px solid rgba(0, 255, 255, 0.151);
+        .menu-item {
+          width: 153px;
+          height: 66px;
+          color: #648da3;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 60px;
+          text-align: center;
+          background-image: url('./assets/images/header/btn-default.png');
+          cursor: pointer;
+          &.active-menu {
+            color: #1cc7ff;
+            text-shadow: 0 0 8px #1cc7ff;
+            background-image: url('./assets/images/header/btn-active.png');
+          }
+        }
+        .menu-item:hover {
+          color: #93c3dd;
+          font-size: 21px;
+          text-shadow: 0 0 3px #1cc7ff;
+        }
+      }
+      .title {
+        width: 97%;
+        height: 100%;
+        margin-left: 3%;
+        background-image: url('./assets/images/header/bg-title.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .clock {
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 24%;
+        height: 50%;
+        .day,
+        .year,
+        .week {
+          margin-right: 20px;
+          color: #ffffff;
+        }
+        .day {
+          font-weight: bold;
+          font-size: 24px;
+        }
+        .year,
+        .week {
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
     }
   }
-  .aside {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  .main-container {
     width: 100%;
-    height: 200px;
-    background-color: rgba(0, 255, 255, 0.151);
-    .menu-item {
-      width: 150px;
-      height: 68px;
-      color: black;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 68px;
-      text-align: center;
-      background-color: gray;
-      border-radius: 4px;
-      cursor: pointer;
+    height: calc(90% - 10px);
+    .aside-container {
+      display: flex;
+      justify-content: center;
+      .collapse {
+        width: 90%;
+        height: 100%;
+        :global {
+          .ant-collapse-item {
+            margin-bottom: 16px;
+            background-image: url('./assets//images/aside/btn-node-default.png');
+            background-repeat: no-repeat;
+            background-position: 20% 0;
+            background-size: contain;
+
+            .ant-collapse-header {
+              color: #ffffff;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 10px;
+              text-align: center;
+            }
+          }
+
+          .ant-collapse-item-active {
+            background-image: url('./assets//images/aside/btn-node-active.png');
+            background-repeat: no-repeat;
+            background-position: 20% 0;
+            background-size: contain;
+          }
+          // .ant-collapse-content {
+          //   .ant-collapse-content-box {
+          //   }
+          // }
+
+          .ant-collapse-content::after {
+            display: block;
+            width: 10%;
+            margin: -16px auto -16px;
+            content: url('./assets/images//aside/icon-arrow-down.png');
+          }
+          // .ant-collapse-content-active {
+          // }
+        }
+        .panel-container {
+          .panel-item {
+            width: 100%;
+            height: 35px;
+            margin-right: 0px;
+            margin-bottom: 16px;
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 35px;
+            text-align: center;
+            background-image: url('./assets//images/aside/btn-equipment-default.png');
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: contain;
+            cursor: pointer;
+            &.active {
+              background-image: url('./assets//images/aside/btn-equipment-active.png');
+            }
+          }
+        }
+      }
     }
   }
 }
